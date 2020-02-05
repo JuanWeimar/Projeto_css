@@ -1,0 +1,431 @@
+/*estilização do body*/
+html{
+    height: 100%;
+}
+
+header{
+    flex: 1;
+}
+
+body{
+    background-image: url("grenalfinal.jpg");
+    background-repeat: no-repeat;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+body nav,.rodape,.lista li,.tabela1,.tabela2{
+    max-width: 85.375em;
+    min-width: 20em;
+}
+
+@media only screen and(max-device-width:1500px)
+{
+     body,.rodape,.lista,.tabela1,.tabela2{width:400px;} 
+}
+
+@media only screen and(max-device-height:1140px)
+{
+     body,.rodape,.lista,.tabela1,.tabela2{height:400px;} 
+}
+
+img,body,.container p,ol.lista li,.container_aside,.container_section{
+    max-width: 100%;
+    height: auto;
+}
+
+/*fim da estilização do body*/
+
+/*estilização da página index*/
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(37, 36, 36, 0.836);
+    align-items: center;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    
+}
+
+nav .logo img{
+    width: 70%;
+    height: 70%;
+
+}
+
+nav .menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav .menu a{
+    color:white;
+    text-decoration: none; 
+    position: relative;
+    right: 2%;
+    
+}
+
+nav .menu :hover{
+    color:red;
+    text-decoration: none; 
+    text-decoration: transparent;
+    
+}
+
+
+.conteudo_principal h1{
+    color:white;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(37, 36, 36, 0.836);
+    border-bottom: solid 2px red;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    margin-top: 10%;
+    border-radius: 30px;
+
+}
+
+.conteudo_secundario h3{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(37, 36, 36, 0.836);
+    border-bottom: solid 2px red;
+    position: relative;
+    left: 35%;
+    width: 30%;
+    margin-top: 5%;
+    border-radius: 30px;
+
+}
+
+/*fim da estilização da página index*/
+
+/*estilização do footer*/
+header,footer{
+    position: relative;
+
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(37, 36, 36, 0.836);
+    height: 150px;
+    align-items: center;
+    
+}
+
+footer.rodape{
+    display: flex;
+    margin-top: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+}
+
+.rodape .container .telefone1{
+    color: rgb(209, 202, 202);
+    width: 100%;
+    height: 1%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+
+.rodape .container .email1{
+    width: 100%;
+    height: 1%;
+    display: flex;
+    color:rgb(209, 202, 202);
+
+}
+
+.rodape .container .endereço1{
+    width: 100%;
+    height: 1%;
+    display: flex;
+    color: rgb(209, 202, 202);
+
+}
+
+.rodape .container .citação1{
+    width: 100%;
+    height: 1%;
+    display: flex;
+    color: rgb(209, 202, 202);
+
+}
+/*fim da estilização do footer*/
+
+/*estilização da página histórico*/
+
+.tabela1{
+    list-style: armenian;
+    text-align: center;
+    background-color: rgb(122, 112, 98);
+    position: relative;
+    top: 0%;
+    border:solid 2px burlywood;
+    left: 21%;
+    width: 60%;
+    
+}
+
+.tabela1 .dif{
+    border:dotted 3px rgb(126, 214, 11);
+    background-color: indigo;
+    color: lightblue;
+}
+
+.tabela2{
+    list-style: armenian;
+    text-align: center;
+    background-color: rgb(122, 112, 98);
+    position: relative;
+    top: 0%;
+    border:solid 2px burlywood;
+    left: 21%;
+    width: 60%;
+    
+}
+
+.tabela2 .dif{
+    border:dotted 3px rgb(126, 214, 11);
+    background-color: indigo;
+    color: lightblue;
+}
+/*Fim da estilização da página histórico*/
+
+/*estilização da página curiosidades*/
+
+.frases{
+    border-bottom: solid 2px red;
+    background-color: rgba(37, 36, 36, 0.836);
+    position: relative;
+    width: 47%;
+    left: 25%;
+    padding-left: 20px;
+    padding-right: 0px;
+    border-radius: 30px;
+}
+
+.frases h1,h2{
+    float: inline-start;
+    color:white;
+    font-size: 15pt;
+    font-family: sans-serif;
+    
+}
+
+.lista{
+    list-style-type: upper-latin;
+    border-bottom: solid 2px red;
+    height: 45%;
+    background-color: rgba(37, 36, 36, 0.836);
+    width: 90%;
+    position: relative;
+    left: 4%;
+    border-radius: 30px;
+    
+}
+
+
+
+.lista li{
+    margin-top: 20px;
+    font-size: 13pt;
+    color: white;
+    font-family: sans-serif;
+}
+/*fim da estilização da página curiosidades*/
+
+/*estilização da página grenal do século*/
+/*.p1{
+    float: right;
+    font-family: sans-serif;
+    position: relative;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+    background-color: rgba(37, 36, 36, 0.836);
+    border-radius: 10px;
+    border-bottom: solid 2px red;
+    
+}*/
+.container_aside .p1 {
+    
+    
+    background-color: rgba(37, 36, 36, 0.836);
+    padding-right: 0px;
+    padding-left: 20px;
+    position: relative;
+    width: 90%;
+    left: 4%;
+    border-radius: 40px;
+    padding-top: 0px;
+    color: white;
+    font-family: sans-serif;
+    border-bottom: solid 2px red;
+}
+
+.container_section h1{
+    position: relative;
+    left: 40%;
+    color:white;
+    font-family: sans-serif;
+    background-color: rgba(37, 36, 36, 0.836);
+    width: 15%;
+    border-radius: 20px;
+    border-bottom: solid 2px red;
+}
+
+.container_section img{
+    position: relative;
+    left: 25%;
+
+}
+/*fim da estilazação da página grenal do século*/
+
+/*estilização da página de avaliação*/
+
+form .gostou{
+    text-align: center;
+    border-bottom: solid 2px red;
+    background-color: rgba(37, 36, 36, 0.836);
+    position: relative;
+    left: 35%;
+    width: 30%;
+    color: white;
+    font-family: sans-serif;
+}
+
+.escolhas{
+    color: white;
+    border-bottom: solid 2px red;
+    background-color: rgba(37, 36, 36, 0.836);
+    position: relative;
+    font-family: sans-serif;
+    left: 35%;
+    width: 30%;
+}
+
+.escolhas .ruim{
+    position: relative;
+    right: 5.3%;
+}
+
+.escolhas .bom{
+    position: relative;
+    right: 5.8%;
+}
+
+.escolhas .muito_bom{
+    position: relative;
+    right: 0.5%;
+}
+
+.textarea{
+    border-bottom: solid 2px red;
+    background-color: rgba(37, 36, 36, 0.836);
+    color:white;
+    font-family: sans-serif;
+    
+    
+}
+
+.botões{
+    border-radius: 30px;
+}
+
+.pergunta{
+    border-bottom: solid 2px red;
+    background-color: rgba(37, 36, 36, 0.836);
+    color: white;
+    font-family: sans-serif;
+}
+
+.nome{
+    color: white;
+    font-family: sans-serif;
+    
+}
+.email{
+    color: white;
+    font-family: sans-serif;
+}
+
+.fone{
+    color: white;
+    font-family: sans-serif;
+}
+
+.input_fone{
+    position: relative;
+    left: 0.3%;
+    background-color: rgba(37, 36, 36, 0.836);
+    border-bottom: solid 2px red;
+    color: white;
+    font-family: sans-serif;
+}
+
+.input_nome{
+    background-color: rgba(37, 36, 36, 0.836);
+    border-bottom: solid 2px red;
+    color: white;
+    font-family: sans-serif;
+}
+
+.input_email{
+    background-color: rgba(37, 36, 36, 0.836);
+    border-bottom: solid 2px red;
+    color: white;
+    font-family: sans-serif;
+}
+
+.check{
+    background-color: rgba(37, 36, 36, 0.836);
+    border-bottom: solid 2px red;
+    font-family: sans-serif;
+    color: white;
+}
+
+.novidades_site{
+    background-color: rgba(37, 36, 36, 0.836);
+    border-bottom: solid 2px red;
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    width: 27%;
+    left: 37%;
+}
+
+fieldset{
+    background-color: rgba(37, 36, 36, 0.836);
+    border-bottom: solid 2px red;
+
+}
+/*fim da estilização da página avaliação*/

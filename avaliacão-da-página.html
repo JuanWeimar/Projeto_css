@@ -1,0 +1,120 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="estilos.css">
+
+<title>Avaliação</title>
+</head>
+
+<body>
+        <header>
+	
+        <nav>
+          <div class="logo">
+            <img src="grenal1.png" alt="">
+      
+          </div>
+      
+          <div class="menu">
+          <a href="index.html">Página Inicial</a>
+        
+          <a href="histórico.html">Histórico do clássico</a>
+        
+          <a href="curiosidades.html" >Curiosidades</a>
+        
+          <a href="Grenal-do-Século.html">Grenal do século</a>
+        
+          <a href="avaliacão-da-página.html">Avaliação</a>
+          </div>
+        <br><br><br>
+        
+        </nav>
+        
+        </header>
+        <br>
+
+
+
+<form action="dados.php" method="post" align="center">
+  <fieldset>
+        <h1 class="Gostou">Gostou do meu site?</h1>
+        <div class="escolhas">
+          <p>
+          <input class="muito_bom" type="radio"name="opinião" value="Muito bom" id="very bad" onclick="validar1('sim')"/>Muito Bom<br/>
+          <input class="bom" type="radio"name="opinião" value="Bom" id="very bad" onclick="validar1('sim')"/>Bom<br/>
+          <input class="ruim" type="radio"name="opinião" value="Ruim" id="very bad" onclick="validar1('sim')"/>Ruim<br/>
+          <input type="radio"name="opinião" value="Muito Ruim" id="very bad" onclick="validar1('sim')"/>Muito Ruim<br/>
+        </p>
+        </div>
+        <p>
+        <textarea class="textarea" name="mensagem" rows="4"
+        cols="54" placeholder="Digite aqui"></textarea>
+        </p>
+        <p>
+        <button class="botões" type="submit" disabled id="Enviar">Enviar</button>
+        <button class="botões" type="reset">Cancelar</button>
+        </p>
+        <b class="pergunta">Diga-nos como entrar em contato com você:</b>
+
+        <p class="nome">
+        Nome:<input class="input_nome" type="text" name="nome" size="40">
+        </p>
+        <p class="email">
+        E-mail:<input class="input_email" type="text" name="email" size="40">
+        </p>
+        <p class="fone">
+        Fone:<input class="input_fone" type="text" name="fone" size="40">
+        </p>
+        <p class="novidades_site">
+        <input class="check" type="checkbox" name="novidades" size="25">Quero receber as novidades do site por e-mail
+        <input class="check" type="checkbox" name="aceite" id="aceite" size="25" onclick="validar('sim')">Aceito repassar minhas informações</p>
+        <input class="botões" type="submit" value="Enviar Dados" disabled id="confirmar">
+        <input class="botões" type="reset" value="Limpar Formulário">
+  </fieldset>   
+</form>
+
+
+<footer class="rodape">
+		<div class="container">
+	
+		<p class="telefone1">Telefone:(53)984685546</p>
+	
+		<p class="email1">E-mail:juanweimar31@gmail.com</p>
+	
+		<p class="endereço1">Endereço:Rua Coronel Afonso Emilio Massot 234</p>
+	
+		<p class="citação1"><cite>Site Grenal</cite> por Juan Weimar. Criado em 2019.</p>
+		</div>
+	</footer>
+
+<script>
+function validar (){
+ var status= document.getElementById('confirmar').disabled;
+ if(status==true)
+ {
+  document.getElementById('confirmar').disabled=false;
+ }
+ else
+ {
+  document.getElementById('confirmar').disabled=true;
+ }
+}
+
+function validar1 (){
+ var status= document.getElementById('Enviar').disabled;
+ if(status==true)
+ {
+  document.getElementById('Enviar').disabled=false;
+ }
+ else
+ {
+  document.getElementById('Enviar').disabled=true;
+ }
+}
+
+</script>
+</body>
+</html>
+
